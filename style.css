@@ -1,0 +1,101 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fuente (puedes cambiarla si querés) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root {
+  --color-bg: #f5f5f7;
+  --color-surface: #ffffff;
+  --color-primary: #5b2be0;
+  --color-primary-dark: #401fb0;
+  --color-accent: #ffb703;
+  --color-text-main: #111827;
+  --color-text-muted: #6b7280;
+  --color-border: #e5e7eb;
+  --radius-lg: 18px;
+  --shadow-soft: 0 14px 30px rgba(15, 23, 42, 0.12);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text-main);
+  line-height: 1.6;
+}
+
+/* Layout general */
+
+.page-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem 3rem;
+  flex: 1;
+}
+
+/* Header + navegación */
+
+.site-header {
+  background: #0f172a;
+  color: #e5e7eb;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.35);
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+.site-header-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0.85rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.site-title {
+  font-size: 1.3rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #f9fafb;
+  text-decoration: none;
+}
+
+.site-title span {
+  color: var(--color-accent);
+}
+
+.main-nav ul {
+  display: flex;
+  list-style: none;
+  gap: 0.9rem;
+  font-size: 0.92rem;
+}
+
+.main-nav a {
+  color: #e5e7eb;
+  text-decoration: none;
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.15s ease;
+}
+
+.main-nav a:hover {
+  background: rgba(14
